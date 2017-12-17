@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'CyberseSwift_Example' do
+  pod 'CyberseSwift', :path => '../'
+
+  target 'CyberseSwift_Tests' do
+    inherit! :search_paths
+
+#    pod 'FBSnapshotTestCase' , '~> 2.1.4'
+  end
+end

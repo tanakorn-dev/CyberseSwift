@@ -1,0 +1,22 @@
+{
+  "name": "CyberseSwift",
+  "version": "0.1.0",
+  "summary": "A short description of CyberseSwift.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/tanakorn-dev/CyberseSwift",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "tanakorn-dev": "tanakorn@setscope.com"
+  },
+  "source": {
+    "git": "https://github.com/tanakorn-dev/CyberseSwift.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "CyberseSwift/Classes/**/*"
+}

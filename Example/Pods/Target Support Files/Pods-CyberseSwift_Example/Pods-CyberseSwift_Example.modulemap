@@ -1,0 +1,6 @@
+framework module Pods_CyberseSwift_Example {
+  umbrella header "Pods-CyberseSwift_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
