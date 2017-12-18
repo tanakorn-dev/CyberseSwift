@@ -30,9 +30,17 @@ class ViewController: UIViewController {
         print(PhoneNumberFunction.phoneNumberStringStyle(phoneNumberString: "123ABC"))
         
         // Validate
-        print("\(ValidateFunction.isEnglishString(textString: "AbcDefg"))")
-        print("\(ValidateFunction.isEnglishString(textString: "Abc1234"))")
-        print("\(ValidateFunction.isEnglishString(textString: "Abcธนกร"))")
+        print("\(ValidateFunction.isEnglishName(textString: "AbcTccc", isFirstname: true))") // True
+        print("\(ValidateFunction.isEnglishName(textString: "Abc Tccc", isFirstname: true))") // True
+        print("\(ValidateFunction.isEnglishName(textString: "Abc123", isFirstname: true))") // False
+        print("\(ValidateFunction.isEnglishName(textString: "Abcธงชัย", isFirstname: true))") // False
+        
+        print("\(ValidateFunction.isEnglishName(textString: "AbcTccc", isFirstname: false))") // True
+        print("\(ValidateFunction.isEnglishName(textString: "Abc Tccc", isFirstname: false))") // False
+        print("\(ValidateFunction.isEnglishName(textString: "Abc123", isFirstname: false))") // False
+        print("\(ValidateFunction.isEnglishName(textString: "Abcธงชัย", isFirstname: false))") // False
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
