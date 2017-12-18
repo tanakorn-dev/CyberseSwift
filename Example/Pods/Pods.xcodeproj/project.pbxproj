@@ -15,6 +15,7 @@
 		92B72521CEF0E9C2E65854FFDA23589E /* Pods-CyberseSwift_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DAD867CAC2DCCA7E48A6D9BDAC81D2B6 /* Pods-CyberseSwift_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A324B4FA7E263366A0F6D03F970CF504 /* ImageFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30E565400F0C1AB4B38C3E82C05586E /* ImageFunction.swift */; };
 		B195E2F19416591610E28A92FE56248D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		B741AC431FE82A8500435913 /* ValidateFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = B741AC421FE82A8500435913 /* ValidateFunction.swift */; };
 		DC2AFAA1ADF6591A8149CAB924A1A901 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		DF82C27EE265313A33B26516E65DF1D6 /* Pods-CyberseSwift_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 89422CF8095C42442309C9B3E4C2F627 /* Pods-CyberseSwift_Tests-dummy.m */; };
 		E307F2A8B6955835F3F68EA987C23A9E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
@@ -59,6 +60,7 @@
 		A4F30529B5F726B3026199B6C89321C2 /* Pods-CyberseSwift_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CyberseSwift_Example.release.xcconfig"; sourceTree = "<group>"; };
 		ADDBE14FBC777163CE38AF06B3BC9AFD /* Pods_CyberseSwift_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CyberseSwift_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE00EDBF41F1EBC1F544862361547725 /* Pods-CyberseSwift_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CyberseSwift_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		B741AC421FE82A8500435913 /* ValidateFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ValidateFunction.swift; path = CyberseSwift/Classes/ValidateFunction.swift; sourceTree = "<group>"; };
 		C30E565400F0C1AB4B38C3E82C05586E /* ImageFunction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageFunction.swift; path = CyberseSwift/Classes/ImageFunction.swift; sourceTree = "<group>"; };
 		D070C5A68590B29D76F9E8B32B5E9136 /* TextFunction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextFunction.swift; path = CyberseSwift/Classes/TextFunction.swift; sourceTree = "<group>"; };
 		D11E37824F3DA1E828B81E3DA1835D68 /* Pods-CyberseSwift_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CyberseSwift_Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 				C30E565400F0C1AB4B38C3E82C05586E /* ImageFunction.swift */,
 				0012354B4094D1D6BA1C9F269750890F /* PhoneNumberFunction.swift */,
 				D070C5A68590B29D76F9E8B32B5E9136 /* TextFunction.swift */,
+				B741AC421FE82A8500435913 /* ValidateFunction.swift */,
 				47E2EB70DC2FC149427CDC8433E82667 /* Support Files */,
 			);
 			name = CyberseSwift;
@@ -347,6 +350,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF9E48DC88DAE370461652584A106A5D /* ColorFunction.swift in Sources */,
+				B741AC431FE82A8500435913 /* ValidateFunction.swift in Sources */,
 				928CB614CE91828318BA9954486CBC71 /* CyberseSwift-dummy.m in Sources */,
 				A324B4FA7E263366A0F6D03F970CF504 /* ImageFunction.swift in Sources */,
 				8C7A3BCADEDC7FE7F8750629088FFE6E /* PhoneNumberFunction.swift in Sources */,

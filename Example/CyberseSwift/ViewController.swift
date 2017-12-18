@@ -28,6 +28,11 @@ class ViewController: UIViewController {
         print(PhoneNumberFunction.phoneNumberStringStyle(phoneNumberString: "0906634663"))
         print(PhoneNumberFunction.phoneNumberStringStyle(phoneNumberString: "1443"))
         print(PhoneNumberFunction.phoneNumberStringStyle(phoneNumberString: "123ABC"))
+        
+        // Validate
+        print("\(ValidateFunction.isEnglishString(textString: "AbcDefg"))")
+        print("\(ValidateFunction.isEnglishString(textString: "Abc1234"))")
+        print("\(ValidateFunction.isEnglishString(textString: "Abcธนกร"))")
     }
 
     override func didReceiveMemoryWarning() {
