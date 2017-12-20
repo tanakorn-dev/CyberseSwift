@@ -9,18 +9,18 @@ import UIKit
 
 public class ValidateFunction {
     
-    public class func isEnglishName(textString: NSString, isFirstname: Bool) -> Bool {
-        do {
-            var rex = "^[a-zA-Z]*$"
-            
-            if isFirstname == true {
-                rex = "^[a-zA-Z ]*$"
-            }
-            
-            let regex = try NSRegularExpression(pattern: rex, options: .caseInsensitive)
-            return regex.firstMatch(in: (textString as String), options: NSRegularExpression.MatchingOptions(rawValue: 0), range: NSMakeRange(0, (textString as String).count)) != nil
-        } catch {
-            return false
+    public class func isEnglishName(candidate: NSString, isFirstname: Bool) -> Bool {
+        var rex = "^[a-zA-Z]*$"
+        
+        if isFirstname == true {
+            rex = "^[a-zA-Z ]*$"
         }
+        
+        return NSPredicate(format: "SELF MATCHES %@", rex).evaluate(with: candidate)
+    }
+    
+    public class func isEmail(candidate: String) -> Bool {
+        let emailRegex = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
+        return NSPredicate(format: "SELF MATCHES %@", emailRegex).evaluate(with: candidate)
     }
 }

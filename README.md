@@ -63,15 +63,45 @@ let newImage02 = ImageFunction.resizeImageCustom(image: UIImage(), width: 100, h
 - phoneNumberStringStyle
 
 ```objc
-let newImage01 = ImageFunction.resizeImageSquare(image: UIImage(), newSize: 20)  // New image size = 20x20
-```
-
-- resizeImageCustom
-
-```objc
 print(PhoneNumberFunction.phoneNumberStringStyle(phoneNumberString: "0901234567")) // 090 123 4567
 print(PhoneNumberFunction.phoneNumberStringStyle(phoneNumberString: "1443")) // 1443
 print(PhoneNumberFunction.phoneNumberStringStyle(phoneNumberString: "123ABC")) // WRONG FORMAT
+```
+
+## Validate Function
+
+- isEnglishName
+
+```objc
+// First Naame
+print("\(ValidateFunction.isEnglishName(textString: "AbcTccc", isFirstname: true))") // True
+print("\(ValidateFunction.isEnglishName(textString: "Abc Tccc", isFirstname: true))") // True
+print("\(ValidateFunction.isEnglishName(textString: "Abc123", isFirstname: true))") // False
+print("\(ValidateFunction.isEnglishName(textString: "Abcธงชัย", isFirstname: true))") // False
+
+// Last Name
+print("\(ValidateFunction.isEnglishName(textString: "AbcTccc", isFirstname: false))") // True
+print("\(ValidateFunction.isEnglishName(textString: "Abc Tccc", isFirstname: false))") // False
+print("\(ValidateFunction.isEnglishName(textString: "Abc123", isFirstname: false))") // False
+print("\(ValidateFunction.isEnglishName(textString: "Abcธงชัย", isFirstname: false))") // False
+```
+
+- isEmail
+
+```objc
+print("\(ValidateFunction.isEmail(candidate: "abcd@gmail.com"))") // True
+print("\(ValidateFunction.isEmail(candidate: "abcd@cdf.co"))") // True
+print("\(ValidateFunction.isEmail(candidate: "abcd@gmail"))") // False
+print("\(ValidateFunction.isEmail(candidate: "abcd@"))") // False
+print("\(ValidateFunction.isEmail(candidate: "abcd"))") // False
+```
+
+## Validate Function
+
+- withCountryCode
+```objc
+print("\(PhoneCodeFunction.withCountryCode(countryCode: "TH"))") // 66
+print("\(PhoneCodeFunction.withCountryCode(countryCode: "AW"))") // 297
 ```
 
 ## Author
