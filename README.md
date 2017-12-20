@@ -96,7 +96,7 @@ print("\(ValidateFunction.isEmail(candidate: "abcd@"))") // False
 print("\(ValidateFunction.isEmail(candidate: "abcd"))") // False
 ```
 
-## Validate Function
+## Phone code Function
 
 - withCountryCode
 ```objc
