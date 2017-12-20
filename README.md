@@ -16,7 +16,7 @@ it, simply add the following line to your Podfile:
 pod 'CyberseSwift'
 ```
 
-And mmport CyberseSwift into the class that wants to make use of the library.
+And import CyberseSwift into the class that wants to make use of the library.
 
 ```objc
 import CyberseSwift
