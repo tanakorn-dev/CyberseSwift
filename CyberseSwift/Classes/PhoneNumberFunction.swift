@@ -41,7 +41,7 @@ public class PhoneNumberFunction {
         }
     }
     
-    class func isNumber(numberString: NSString) -> Bool {
+    public class func isNumber(numberString: NSString) -> Bool {
         do {
             let regex = try NSRegularExpression(pattern: "^[0-9]*$", options: .caseInsensitive)
             return regex.firstMatch(in: (numberString as String), options: NSRegularExpression.MatchingOptions(rawValue: 0), range: NSMakeRange(0, (numberString as String).count)) != nil

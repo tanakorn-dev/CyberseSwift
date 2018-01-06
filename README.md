@@ -104,6 +104,18 @@ print("\(PhoneCodeFunction.withCountryCode(countryCode: "TH"))") // 66
 print("\(PhoneCodeFunction.withCountryCode(countryCode: "AW"))") // 297
 ```
 
+## Credit Card Function
+
+- creditCardStringStyle
+```objc
+print(CreditCardFunction.creditCardStringStyle(creditCardString: "1234567890123456")) // 1234 5678 9012 3456
+```
+
+- expDateStyle
+```objc
+print(CreditCardFunction.expDateStyle(expDateString: "0221")) // 02/21
+```
+
 ## Author
 
 tanakorn-dev, tanakorn@setscope.com

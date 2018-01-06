@@ -15,6 +15,7 @@
 		92B72521CEF0E9C2E65854FFDA23589E /* Pods-CyberseSwift_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DAD867CAC2DCCA7E48A6D9BDAC81D2B6 /* Pods-CyberseSwift_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A324B4FA7E263366A0F6D03F970CF504 /* ImageFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30E565400F0C1AB4B38C3E82C05586E /* ImageFunction.swift */; };
 		B195E2F19416591610E28A92FE56248D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		B72EAFD02001124500F918EB /* CreditCardFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = B72EAFCF2001124500F918EB /* CreditCardFunction.swift */; };
 		B741AC431FE82A8500435913 /* ValidateFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = B741AC421FE82A8500435913 /* ValidateFunction.swift */; };
 		B7A669631FEA1CA500BF269F /* PhoneCodeFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A669621FEA1CA500BF269F /* PhoneCodeFunction.swift */; };
 		DC2AFAA1ADF6591A8149CAB924A1A901 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
@@ -61,6 +62,7 @@
 		A4F30529B5F726B3026199B6C89321C2 /* Pods-CyberseSwift_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CyberseSwift_Example.release.xcconfig"; sourceTree = "<group>"; };
 		ADDBE14FBC777163CE38AF06B3BC9AFD /* Pods_CyberseSwift_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CyberseSwift_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE00EDBF41F1EBC1F544862361547725 /* Pods-CyberseSwift_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CyberseSwift_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		B72EAFCF2001124500F918EB /* CreditCardFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CreditCardFunction.swift; path = CyberseSwift/Classes/CreditCardFunction.swift; sourceTree = "<group>"; };
 		B741AC421FE82A8500435913 /* ValidateFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ValidateFunction.swift; path = CyberseSwift/Classes/ValidateFunction.swift; sourceTree = "<group>"; };
 		B7A669621FEA1CA500BF269F /* PhoneCodeFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PhoneCodeFunction.swift; path = CyberseSwift/Classes/PhoneCodeFunction.swift; sourceTree = "<group>"; };
 		C30E565400F0C1AB4B38C3E82C05586E /* ImageFunction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageFunction.swift; path = CyberseSwift/Classes/ImageFunction.swift; sourceTree = "<group>"; };
@@ -143,6 +145,7 @@
 				D070C5A68590B29D76F9E8B32B5E9136 /* TextFunction.swift */,
 				B741AC421FE82A8500435913 /* ValidateFunction.swift */,
 				B7A669621FEA1CA500BF269F /* PhoneCodeFunction.swift */,
+				B72EAFCF2001124500F918EB /* CreditCardFunction.swift */,
 				47E2EB70DC2FC149427CDC8433E82667 /* Support Files */,
 			);
 			name = CyberseSwift;
@@ -358,6 +361,7 @@
 				A324B4FA7E263366A0F6D03F970CF504 /* ImageFunction.swift in Sources */,
 				8C7A3BCADEDC7FE7F8750629088FFE6E /* PhoneNumberFunction.swift in Sources */,
 				B7A669631FEA1CA500BF269F /* PhoneCodeFunction.swift in Sources */,
+				B72EAFD02001124500F918EB /* CreditCardFunction.swift in Sources */,
 				0A8D0AB6BDBB318673BD1A81D04EE97C /* TextFunction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
