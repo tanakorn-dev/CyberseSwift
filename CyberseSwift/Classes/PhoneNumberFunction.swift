@@ -37,7 +37,7 @@ public class PhoneNumberFunction {
             }
         }
         else {
-            return "WRONG FORMAT"
+            return ""
         }
     }
     
