@@ -19,4 +19,13 @@ public class TextFunction {
         return "\(formatter.string(from: amount)!)"
     }
     
+    public class func numberToCurencyNoDecimal(amount: NSNumber) -> String {
+        
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .currency
+        formatter.positiveFormat = "#,##0"
+        
+        return "\(formatter.string(from: amount)!)"
+    }
+    
 }
