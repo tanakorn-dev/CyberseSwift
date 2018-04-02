@@ -22,7 +22,7 @@
 		DF82C27EE265313A33B26516E65DF1D6 /* Pods-CyberseSwift_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 89422CF8095C42442309C9B3E4C2F627 /* Pods-CyberseSwift_Tests-dummy.m */; };
 		E307F2A8B6955835F3F68EA987C23A9E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		E634B15A985BCB533E8B950CC324021A /* Pods-CyberseSwift_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2255C7E7EC617FE94D455C3E35E20EF5 /* Pods-CyberseSwift_Example-dummy.m */; };
-		F6235F912072AA5600DC146A /* DateFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6235F902072AA5600DC146A /* DateFunction.swift */; };
+		F6235F932072B0E900DC146A /* DateFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6235F922072B0E900DC146A /* DateFunction.swift */; };
 		FF9E48DC88DAE370461652584A106A5D /* ColorFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7640367DB4DB08E917AFA0ECA3DF9CD6 /* ColorFunction.swift */; };
 /* End PBXBuildFile section */
 
@@ -73,7 +73,7 @@
 		DAD867CAC2DCCA7E48A6D9BDAC81D2B6 /* Pods-CyberseSwift_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CyberseSwift_Example-umbrella.h"; sourceTree = "<group>"; };
 		E55D2040C098836C049342A0D2A9E02E /* Pods-CyberseSwift_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CyberseSwift_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		EAC1C5BF002A93846224AF7290808821 /* Pods-CyberseSwift_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CyberseSwift_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		F6235F902072AA5600DC146A /* DateFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFunction.swift; sourceTree = "<group>"; };
+		F6235F922072B0E900DC146A /* DateFunction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DateFunction.swift; path = CyberseSwift/Classes/DateFunction.swift; sourceTree = "<group>"; };
 		F6D2BF6A9F1938F00DB039888974944B /* Pods-CyberseSwift_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CyberseSwift_Tests-umbrella.h"; sourceTree = "<group>"; };
 		FFCC705EA2B0FD816B80ECB263EF4916 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -141,6 +141,7 @@
 		56265C00960C420B8977A21AE0AF2DF4 /* CyberseSwift */ = {
 			isa = PBXGroup;
 			children = (
+				F6235F922072B0E900DC146A /* DateFunction.swift */,
 				7640367DB4DB08E917AFA0ECA3DF9CD6 /* ColorFunction.swift */,
 				C30E565400F0C1AB4B38C3E82C05586E /* ImageFunction.swift */,
 				0012354B4094D1D6BA1C9F269750890F /* PhoneNumberFunction.swift */,
@@ -148,7 +149,6 @@
 				B741AC421FE82A8500435913 /* ValidateFunction.swift */,
 				B7A669621FEA1CA500BF269F /* PhoneCodeFunction.swift */,
 				B72EAFCF2001124500F918EB /* CreditCardFunction.swift */,
-				F6235F902072AA5600DC146A /* DateFunction.swift */,
 				47E2EB70DC2FC149427CDC8433E82667 /* Support Files */,
 			);
 			name = CyberseSwift;
@@ -365,7 +365,7 @@
 				8C7A3BCADEDC7FE7F8750629088FFE6E /* PhoneNumberFunction.swift in Sources */,
 				B7A669631FEA1CA500BF269F /* PhoneCodeFunction.swift in Sources */,
 				B72EAFD02001124500F918EB /* CreditCardFunction.swift in Sources */,
-				F6235F912072AA5600DC146A /* DateFunction.swift in Sources */,
+				F6235F932072B0E900DC146A /* DateFunction.swift in Sources */,
 				0A8D0AB6BDBB318673BD1A81D04EE97C /* TextFunction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
