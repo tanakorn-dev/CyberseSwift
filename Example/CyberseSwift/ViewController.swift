@@ -30,6 +30,7 @@ class ViewController: UIViewController {
         print(PhoneNumberFunction.phoneNumberStringStyle(phoneNumberString: "123ABC"))
         
         // Validate
+        print("========== Validate")
         print("\(ValidateFunction.isEnglishName(candidate: "AbcTccc", isFirstname: true))") // True
         print("\(ValidateFunction.isEnglishName(candidate: "Abc Tccc", isFirstname: true))") // True
         print("\(ValidateFunction.isEnglishName(candidate: "Abc123", isFirstname: true))") // False
@@ -41,17 +42,29 @@ class ViewController: UIViewController {
         print("\(ValidateFunction.isEnglishName(candidate: "Abcธงชัย", isFirstname: false))") // False
         
         // Validate Email
+        print("========== Validate Email")
         print("\(ValidateFunction.isEmail(candidate: "abcd@gmail.com"))") // True
         print("\(ValidateFunction.isEmail(candidate: "abcd@cdf.co"))") // True
         print("\(ValidateFunction.isEmail(candidate: "abcd@gmail"))") // False
         print("\(ValidateFunction.isEmail(candidate: "abcd@"))") // False
         print("\(ValidateFunction.isEmail(candidate: "abcd"))") // False
         
+        // Validate Password
+        print("========== Validate Password")
+        print("\(ValidateFunction.isPassword(candidate: "Abcdabcd"))") // False
+        print("\(ValidateFunction.isPassword(candidate: "Abcd1234"))") // False
+        print("\(ValidateFunction.isPassword(candidate: "Abcd1234@"))") // True
+        print("\(ValidateFunction.isPassword(candidate: "Abcd1234@!!!!"))") // False
+        print("\(ValidateFunction.isPassword(candidate: "Abcd12@"))") // False
+        print("\(ValidateFunction.isPassword(candidate: "Abcd@"))") // False
+        
         // Phone Code
+        print("========== Phone Code")
         print("\(PhoneCodeFunction.withCountryCode(countryCode: "TH"))") // 66
         print("\(PhoneCodeFunction.withCountryCode(countryCode: "AW"))") // 297
         
         // Credit Card
+        print("========== Credit Card")
         print(CreditCardFunction.creditCardStringStyle(creditCardString: "1234567890123456")) // 1234 5678 9012 3456
         print(CreditCardFunction.expDateStyle(expDateString: "0221")) // 02/21
         
