@@ -14,12 +14,7 @@ public class DateFunction {
 //        2018-03-25
         let dateArr = dateString.components(separatedBy: "-")
         
-        return "\(self.dayCheckDigit(day: dateArr[2])) \(self.monthShortForm(month: dateArr[1])) \(self.yearTwoLastDigit(year: dateArr[0]))"
-    }
-    
-    class func yearTwoLastDigit(year: String) -> String {
-        let characters = Array(year)
-        return "\(characters[2])\(characters[3])"
+        return "\(self.dayCheckDigit(day: dateArr[2])) \(self.monthShortForm(month: dateArr[1])) \(dateArr[0])"
     }
     
     class func dayCheckDigit(day: String) -> String {
@@ -57,40 +52,40 @@ public class DateFunction {
     
     class func monthShortForm(month: String) -> String {
         if month == "01" {
-            return "Jan"
+            return "January"
         }
         else if month == "02" {
-            return "Feb"
+            return "February"
         }
         else if month == "03" {
-            return "Mar"
+            return "March"
         }
         else if month == "04" {
-            return "Apr"
+            return "April"
         }
         else if month == "05" {
             return "May"
         }
         else if month == "06" {
-            return "Jun"
+            return "June"
         }
         else if month == "07" {
-            return "Jul"
+            return "July"
         }
         else if month == "08" {
-            return "Aug"
+            return "August"
         }
         else if month == "09" {
-            return "Sep"
+            return "September"
         }
         else if month == "10" {
-            return "Oct"
+            return "October"
         }
         else if month == "11" {
-            return "Nov"
+            return "November"
         }
         else {
-            return "Dec"
+            return "December"
         }
     }
 }
