@@ -52,10 +52,10 @@ class ViewController: UIViewController {
         // Validate Password
         print("========== Validate Password")
         print("\(ValidateFunction.isPassword(candidate: "Abcdabcd"))") // False
-        print("\(ValidateFunction.isPassword(candidate: "Abcd1234"))") // False
-        print("\(ValidateFunction.isPassword(candidate: "Abcd1234@"))") // True
-        print("\(ValidateFunction.isPassword(candidate: "Abcd1234@!!!!"))") // False
-        print("\(ValidateFunction.isPassword(candidate: "Abcd12@"))") // False
+        print("\(ValidateFunction.isPassword(candidate: "Abcd1234"))") // True
+        print("\(ValidateFunction.isPassword(candidate: "Abcd1234@"))") // False
+        print("\(ValidateFunction.isPassword(candidate: "Abcd1234567899"))") // False
+        print("\(ValidateFunction.isPassword(candidate: "abcd1234"))") // False
         print("\(ValidateFunction.isPassword(candidate: "Abcd@"))") // False
         
         // Phone Code
