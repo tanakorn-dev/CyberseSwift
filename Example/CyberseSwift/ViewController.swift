@@ -26,6 +26,7 @@ class ViewController: UIViewController {
 //        let newImage02 = ImageFunction.resizeImageCustom(image: UIImage(), width: 100, height: 50)
         
         print(PhoneNumberFunction.phoneNumberStringStyle(phoneNumberString: "0906634663"))
+        print(PhoneNumberFunction.phoneNumberMinusStyle(phoneNumberString: "0906634663"))
         print(PhoneNumberFunction.phoneNumberStringStyle(phoneNumberString: "1443"))
         print(PhoneNumberFunction.phoneNumberStringStyle(phoneNumberString: "123ABC"))
         
