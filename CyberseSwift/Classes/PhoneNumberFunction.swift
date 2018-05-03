@@ -48,25 +48,27 @@ public class PhoneNumberFunction {
         
         if self.isNumber(numberString: (replaced as NSString)) == true {
             let characters = Array(replaced)
+            var index = 0
+            var newPhoneString = ""
+            var countChar = 0
             
-            if (characters.count > 3) && (characters.count <= 10) && characters[0] == "0" {
-                var index = 0
-                var newPhoneString = ""
-                
-                for i in 0 ..< characters.count {
-                    
-                    if (index == 3) || (index == 6) {
-                        newPhoneString.append("-")
-                    }
-                    newPhoneString.append(characters[i])
-                    index = index + 1
-                }
-                
-                return newPhoneString as NSString
+            if characters.count > 10 {
+                countChar = 10
             }
             else {
-                return replaced as NSString
+                countChar = characters.count
             }
+            
+            for i in 0 ..< countChar {
+                
+                if (index == 3) || (index == 6) {
+                    newPhoneString.append("-")
+                }
+                newPhoneString.append(characters[i])
+                index = index + 1
+            }
+            
+            return newPhoneString as NSString
         }
         else {
             return ""
