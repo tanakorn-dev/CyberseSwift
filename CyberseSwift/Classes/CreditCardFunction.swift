@@ -66,4 +66,42 @@ public class CreditCardFunction {
             return "WRONG FORMAT"
         }
     }
+    
+    public class func cvvStyle(cvvString: NSString) -> NSString {
+    
+        if PhoneNumberFunction.isNumber(numberString: cvvString) == true {
+            let characters = Array(cvvString as String)
+            var newCvvString = ""
+            
+            for i in 0 ..< characters.count {
+                if i < 3 {
+                    newCvvString.append(characters[i])
+                }
+            }
+            
+            return newCvvString as NSString
+        }
+        else {
+            return "WRONG FORMAT"
+        }
+    }
+    
+    public class func cardNameStyle(cardNameString: NSString) -> NSString {
+        
+        let characters = Array(cardNameString as String)
+        var newCvvString = ""
+        
+        if characters.count <= 22 {
+            return cardNameString
+        }
+        else {
+            for i in 0 ..< characters.count {
+                if i < 22 {
+                    newCvvString.append(characters[i])
+                }
+            }
+            
+            return newCvvString as NSString
+        }
+    }
 }
