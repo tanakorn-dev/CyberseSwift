@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'CyberseSwift'
-  s.version          = '0.1.17'
+  s.version          = '0.1.18'
   s.summary          = 'CyberseSwift is all function for swift.'
 
 # This description is used to generate tags and improve search results.
@@ -24,7 +24,7 @@ TODO: Add long description of the pod here.
   s.homepage         = 'https://github.com/tanakorn-dev/CyberseSwift'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'Tanakorn Phoochaliaw' => 'tanakorn@setscope.com' }
+  s.author           = { 'Tanakorn Phoochaliaw' => 'tanakorn.dev@gmail.com' }
   s.source           = { :git => 'https://github.com/tanakorn-dev/CyberseSwift.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/phoochaliaw'
 
