@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'CyberseSwift'
-  s.version          = '0.1.18'
+  s.version          = '0.1.20'
   s.summary          = 'CyberseSwift is all function for swift.'
   s.swift_version    = '>= 5.0'
 
