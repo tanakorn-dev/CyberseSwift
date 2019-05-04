@@ -24,8 +24,13 @@ public class ValidateFunction {
         return NSPredicate(format: "SELF MATCHES %@", emailRegex).evaluate(with: candidate)
     }
     
+    public class func isThaiPhone(candidate: String) -> Bool {
+        let thaiPhoneRegex = "0+[986]{1}+[0-9]{8}"
+        return NSPredicate(format: "SELF MATCHES %@", thaiPhoneRegex).evaluate(with: candidate)
+    }
+    
     public class func isPassword(candidate: String) -> Bool {
-        let passwordRegex = "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)[a-zA-Z\\d]{8,12}$"
+        let passwordRegex = "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)[a-zA-Z\\d]{8,16}$"
         return NSPredicate(format: "SELF MATCHES %@", passwordRegex).evaluate(with: candidate)
     }
 }

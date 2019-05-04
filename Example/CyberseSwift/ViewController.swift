@@ -55,9 +55,18 @@ class ViewController: UIViewController {
         print("\(ValidateFunction.isPassword(candidate: "Abcdabcd"))") // False
         print("\(ValidateFunction.isPassword(candidate: "Abcd1234"))") // True
         print("\(ValidateFunction.isPassword(candidate: "Abcd1234@"))") // False
-        print("\(ValidateFunction.isPassword(candidate: "Abcd1234567899"))") // False
+        print("\(ValidateFunction.isPassword(candidate: "Abcd12345678999AA"))") // False
         print("\(ValidateFunction.isPassword(candidate: "abcd1234"))") // False
         print("\(ValidateFunction.isPassword(candidate: "Abcd@"))") // False
+        
+        // Validate Thai Phone
+        print("\(ValidateFunction.isThaiPhone(candidate: "0906634663"))") // True
+        print("\(ValidateFunction.isThaiPhone(candidate: "0806634663"))") // True
+        print("\(ValidateFunction.isThaiPhone(candidate: "0606634663"))") // True
+        print("\(ValidateFunction.isThaiPhone(candidate: "1906634663"))") // False
+        print("\(ValidateFunction.isThaiPhone(candidate: "090663"))") // False
+        print("\(ValidateFunction.isThaiPhone(candidate: "0906634663456"))") // False
+        print("\(ValidateFunction.isThaiPhone(candidate: "0206634663"))") // False
         
         // Phone Code
         print("========== Phone Code")
